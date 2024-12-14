@@ -1,0 +1,15 @@
+- each submission has an estimated skill rating, which is modeled by a Gaussian N(mu, theta2)
+- where mu is the estimated skill and theta represents the uncertainty of that skill which will decrease over time
+
+- the score by which your bot wins or loses an episode does not affect the skill rating update
+
+- two teams compete on a 2D map in a best of 5 match sequence (called a game) with each match lasting 100 time steps
+- Both teams have a pool of units they can control to gain points arouind the map whike also trying to prevent the other team from doing the same
+
+- various game mechanics and parameters are randomized at the start of each game and remain the same between matches in one game
+- some mechanics / parameteres include the map / terrain generation, how much units can see on a map, how units might be blocked by map features, etc
+- each match is played with fog of war - where each team can only see what their own units can see
+
+- a core objective of the game is a balanced strategy of exploration vs exploitation
+- it is recommended to explore more in the first match or two before leveraging the gained knowledge
+
